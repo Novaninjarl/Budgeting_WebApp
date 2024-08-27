@@ -1,0 +1,131 @@
+/* Global Background Color */
+body {
+  background-color: #14171b; /* Black background */
+  color: #f5f6fa; /* Light text for dark background */
+  font-family: "Roboto", sans-serif; /* Clean, modern font */
+}
+
+/* Container for the entire list */
+.account-list-container {
+  padding: 20px;
+  background-color: #14171b; /* Same as the global background for uniformity */
+}
+
+/* Header for the account section */
+.account-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5f6fa; /* Light text color for dark background */
+  margin-bottom: 20px;
+}
+
+/* Account list container styling */
+.account-list {
+  background: #2f3640; /* Keep it consistent with the overall theme */
+  padding: 15px;
+  border-radius: 12px; /* Slightly larger border radius for smoother edges */
+}
+
+/* Individual account option card */
+.account-option {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* White card background */
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Softer shadow for elevation */
+}
+
+/* Hover effect for account option cards */
+.account-option:hover {
+  background-color: #f0f0f0; /* Slightly darker white on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Styling for radio inputs (keeping them hidden) */
+.account-option input {
+  visibility: hidden;
+}
+
+/* Label for each account option */
+.account-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Account logo styling */
+.account-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  object-fit: contain; /* Ensures the logo fits within its box */
+}
+
+/* Account info container */
+.account-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Account name and details */
+.account-info h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #2f3640; /* Dark text color for contrast against white background */
+}
+
+.account-info p {
+  margin: 5px 0 0;
+  color: #666; /* Soft gray for secondary text */
+}
+
+/* Additional styling for the balance and date information */
+.account-info .balance {
+  font-size: 20px;
+  font-weight: bold;
+  color: #44bd32; /* Green accent color for balances */
+  margin-top: 10px;
+}
+
+.account-info .date {
+  font-size: 14px;
+  color: #888; /* Subtle gray for date information */
+}
+
+/* Scrollable area for the account list */
+.account-list-container {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Scrollbar styles */
+.account-list-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+}
+
+.account-list-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .account-option {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .account-logo {
+    margin-bottom: 10px;
+  }
+
+  .account-info {
+    align-items: flex-start;
+  }
+}

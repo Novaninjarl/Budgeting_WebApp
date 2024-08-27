@@ -1,0 +1,89 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .loading-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .info-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .account-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .account-infot {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .transaction-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .transaction-option input {
+   visibility: hidden;
+  }
+  
+  .transaction-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .account-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+  
+  .transaction-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transaction-info h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .transaction-info p {
+    margin: 5px 0 0;
+    color: #666;
+  }
+  .account-list :hover {
+    background: #414b57;
+  }
+  .transaction-option{
+  
+    height: 150px;
+    width: 250px;;
+  
+  }
+  
