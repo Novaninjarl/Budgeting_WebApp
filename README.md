@@ -1,2 +1,5 @@
-# Budgeting_WebApp
-a full-stack budgeting application that predicts the estimated monthly and yearly balances using Machine Learning while monitoring the actual user balance and transactions. Integrated Django as the backend with React and Vite as the frontend.
+# Budgeting WebApp – ML-Powered Personal Finance Dashboard
+
+A full-stack budgeting application that helps users track transactions, monitor balances, and forecast future monthly/yearly balances using machine learning.
+
+Built with Django, React, Vite, Python, Pandas, scikit-learn, JWT authentication, and GoCardless API integration.
